@@ -10,8 +10,8 @@ Verschlüssel Entschlüssel GUI is a Python application for text encryption and 
 
 ## Usage
 1. Clone the repository:
-   git clone https://github.com/tanishpoddar/Verschlussel-Entschlussel
-   cd Verschlussel-Entschlussel-GUI
+   - git clone https://github.com/tanishpoddar/Verschlussel-Entschlussel
+   - cd Verschlussel-Entschlussel-GUI
 2. Install dependencies: 'pip install Pillow'
 3. Run the Python script to launch the GUI: Verschlüssel Entschlüssel.py
 
