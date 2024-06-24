@@ -1,0 +1,30 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+
+# Virtual environments (if using virtualenv or venv)
+venv/
+env/
+ENV/
+
+# IDE or editor specific files
+.idea/
+.vscode/
+
+# Compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS or system specific files
+.DS_Store
+Thumbs.db
+
+# Streamlit specific files (if applicable)
+.streamlit/
