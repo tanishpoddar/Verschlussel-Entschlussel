@@ -2,7 +2,6 @@ from tkinter import *
 import base64
 from tkinter import messagebox
 import tkinter.font as font
-
 # Encoding Function
 def encode(key, msg):
     enc = []
@@ -37,18 +36,17 @@ def Reset():
     key.set("")
     mode.set(0)
     Output.set("")
-
 #GUI APPLICATION
 wn = Tk()
 wn.geometry("1920x1000")
 wn.configure(bg='#282a36')
-wn.title("Verschlüssel Entschlüssel by Tanish Poddar & Krishna Jaiswal")
+wn.title("Verschlüssel Entschlüssel by Tanish Poddar")
 Message = StringVar()
 key = StringVar()
 mode = IntVar()
 Output = StringVar()
 headingLabel = Label(wn, text="Verschlüssel Entschlüssel", fg='#f8f8f2', font=('Matura MT Script Capitals', 40, 'bold'), bg='#282a36')
-label0 = Label(wn, text="Made By: \n Tanish Poddar [RA2311003010959] \n Krishna Jaiswal [RA2311003010947]", fg='#f8f8f2', font=('Times new roman', 13, 'bold'), bg='#282a36')
+label0 = Label(wn, text="Made By: \n Tanish Poddar [RA2311003010959]", fg='#f8f8f2', font=('Times new roman', 13, 'bold'), bg='#282a36')
 label0.place(x=500, y=120)
 headingLabel.place(x=400, y=60)
 label1 = Label(wn, text='Type Your Message: ', font=('Centaur', 13), bg='#282a36', fg='#f8f8f2')
@@ -74,5 +72,4 @@ label4 = Label(wn, text='Copyright 2023 -   ©️ Tanish Poddar \n Students of S
 label4.place(x=550, y=600)
 ResetBtn.place(x=550, y=450)
 ResetBtn.place(x=550, y=450)
-
 wn.mainloop()
