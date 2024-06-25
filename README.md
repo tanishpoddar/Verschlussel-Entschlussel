@@ -7,6 +7,7 @@ Verschlüssel Entschlüssel GUI is a Python application for text encryption and 
 - **Custom Encryption Keys:** Supports custom encryption keys for added security.
 - **User-Friendly Interface:** Built with Tkinter for a simple and intuitive user experience.
 - **Web Deployment:** Also available as a web application deployed using Streamlit.
+- **Supports Wide Mode & Theme Change:** This app supports Wide Mode in website & Custom Theme Change too for better experience.
 
 ## Usage
 1. Clone the repository:
