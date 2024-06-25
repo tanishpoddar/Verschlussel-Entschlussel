@@ -36,4 +36,9 @@ if st.button("Show Message!", key="show_button"):
         st.error("Please enter both the message and the key.")
 if st.button("Reset", key="reset_button"):
     st.experimental_rerun()
-st.write("©️ 2023 - Tanish Poddar, Student of SRMIST, KTR Campus (Batch 2023-2027)")
+footer = """
+<footer>
+    © | Made with <span style="color: red;">♥</span> by <a href="https://github.com/tanishpoddar" target="_blank" class="footer-link">Tanish Poddar</a>
+</footer>
+"""
+st.components.v1.html(footer, height=50)
