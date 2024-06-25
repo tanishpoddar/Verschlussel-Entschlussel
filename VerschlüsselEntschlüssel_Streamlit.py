@@ -37,8 +37,49 @@ if st.button("Show Message!", key="show_button"):
 if st.button("Reset", key="reset_button"):
     st.experimental_rerun()
 footer = """
-<footer>
-    © | Made with <span style="color: red;">♥</span> by <a href="https://github.com/tanishpoddar" target="_blank" class="footer-link">Tanish Poddar</a>
-</footer>
+# Custom HTML for Footer
+footer = """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footer-link {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+    </style>
+    <div class="footer">
+        © | Made with <span style="color: red;">♥</span> by <a href="https://github.com/tanishpoddar" target="_blank" class="footer-link">Tanish Poddar</a>
+    </div>
 """
-st.components.v1.html(footer, height=50)
+
+# Display Footer
+st.markdown(footer, unsafe_allow_html=True)
+
+# Theme adaptation
+st.markdown(
+    """
+    <style>
+    :root {
+        --background-color: #ffffff;
+        --text-color: #000000;
+    }
+    [data-theme="dark"] {
+        --background-color: #0e1117;
+        --text-color: #f8f8f2;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
